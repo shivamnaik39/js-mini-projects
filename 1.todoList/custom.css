@@ -1,0 +1,6 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul li:last-child{
+  border-bottom: 1px solid #a0aec0;
+}
