@@ -1,87 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.1/css/all.min.css" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="./custom.css" />
-  <title>Todo App</title>
-</head>
-
-<body class="">
-
-  <section id="task-card" class="">
-
-    <div class="container">
-
-      <div id="card" class="max-w-2xl bg-gray-200 p-4 mt-12 flex overflow-hidden flex-col shadow-xl border rounded-lg  ">
-
-        <!-- Adding New Task -->
-        <h2 class="text-2xl font-medium text-gray-700 ">
-          Task List
-        </h2>
-
-        <form id="task-form">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./custom.css" />
+    <title>Todo App</title>
+  </head>
+  <body class="">
+    <section id="task-card" class="">
+      <div class="container">
+        <div
+          id="card"
+          class="max-w-2xl bg-gray-200 p-4 mt-12 flex overflow-hidden flex-col shadow-xl border rounded-lg"
+        >
+          <!-- Adding New Task -->
+          <h2 class="text-2xl font-medium text-gray-700">
+            Task List
+          </h2>
+          <form id="task-form">
+            <div id="input-field" class="mt-6">
+              <label for="task"></label>
+              <input
+                type="text"
+                name="task"
+                id="task"
+                placeholder="Add New Task"
+                class="w-3/4 focus:outline-none bg-gray-200 border-b-2 border-gray-600 p-2 text-gray-800 text-lg"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Add Task"
+              class="w-40 mt-10 py-2 px-4 bg-teal-500 hover:bg-teal-400 focus:outline-none focus:shadow-outline text-center text-white text-base font-medium rounded-lg shadow-md"
+            />
+          </form>
+          <!-- block ends -->
+          <hr class="mt-12 mb-6 border-1 border-gray-500 w-full" />
+          <!-- Filtering -->
+          <h2 id="task-title" class="text-2xl font-medium text-gray-700">
+            Tasks
+          </h2>
 
           <div id="input-field" class="mt-6">
-
-            <label for="task"></label>
-
-            <input type="text" name="task" id="task" placeholder="Add New Task"
-              class="w-3/4 focus:outline-none bg-gray-200 border-b-2 border-gray-600 p-2 text-gray-800 text-lg" />
-
+            <label for="filter"></label>
+            <input
+              type="text"
+              name="filter"
+              id="filter"
+              placeholder="Filter Tasks"
+              class="w-3/4 focus:outline-none bg-gray-200 border-b-2 border-gray-600 p-2 text-gray-800 text-lg"
+            />
           </div>
 
-          <input type="submit" value="Add Task"
-            class="w-40 mt-10 py-2 px-4 bg-teal-500 hover:bg-teal-400 focus:outline-none focus:shadow-outline text-center text-white text-base font-medium rounded-lg shadow-md" />
-
-        </form>
-
-        <!-- block ends -->
-
-        <hr class="mt-12 mb-6 border-1 border-gray-500 w-full " />
-
-        <!-- Filtering -->
-        <h2 id="task-title" class="text-2xl font-medium text-gray-700">
-          Tasks
-        </h2>
-
-
-        <div id="input-field" class="mt-6">
-
-          <label for="filter"></label>
-
-          <input type="text" name="filter" id="filter" placeholder="Filter Tasks"
-            class="w-3/4 focus:outline-none bg-gray-200 border-b-2 border-gray-600 p-2 text-gray-800 text-lg" />
-
+          <!-- Collection -->
+          <ul id="collection" class="mt-6">
+            <!-- Li will come here -->
+            <!-- Sample li -->
+          </ul>
+          <hr class="mt-6 mb-4 border-1 border-gray-500 w-full" />
+          <a
+            id="clear-tasks"
+            href="#"
+            class="w-40 mt-2 py-2 px-4 bg-gray-700 hover:bg-gray-600 focus:outline-none focus:shadow-outline text-center text-white text-base font-medium rounded-lg shadow-md"
+          >
+            Clear Tasks
+          </a>
         </div>
-
-
-        <!-- Collection -->
-        <ul id="collection" class="mt-6">
-
-          <!-- Li will come here -->
-          <!-- Sample li -->
-
-
-        </ul>
-
-        <hr class="mt-6 mb-4 border-1 border-gray-500 w-full" />
-
-        <a id="clear-tasks" href="#"
-          class="w-40 mt-2 py-2 px-4 bg-gray-700 hover:bg-gray-600 focus:outline-none focus:shadow-outline text-center text-white text-base font-medium rounded-lg shadow-md">
-          Clear Tasks
-        </a>
-
       </div>
-
-    </div>
-
-  </section>
-
-  <script src="./app.js"></script>
-</body>
-
+    </section>
+    <script src="./app.js"></script>
+  </body>
 </html>

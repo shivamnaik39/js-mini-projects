@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <title>Loan Calculator</title>
+  </head>
+  <body class="bg bg-gray-800">
+    <div class="container flex justify-center">
+      <div id="card" class="bg-gray-100 p-8 my-8 shadow-xl rounded-lg max-w-xl">
+        <h1
+          id="heading"
+          class="text-center mb-8 text-2xl sm:text-4xl font-semibold text-gray-800"
+        >
+          Loan Calculator
+        </h1>
+        <form id="loan-form">
+          <div
+            id="input-filed"
+            class="mt-4 border border-gray-500 text-gray-700 rounded-sm flex items-center"
+          >
+            <label
+              for="amount"
+              class="px-4 py-2 bg-gray-400 text-lg font-medium"
+              >&#8377;</label
+            >
+            <input
+              type="text"
+              id="amount"
+              placeholder="Loan Anount"
+              class="px-4 py-3 w-full h-full focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div
+            id="input-filed"
+            class="mt-4 border border-gray-500 text-gray-700 rounded-sm flex items-center"
+          >
+            <label
+              for="annualInterest"
+              class="px-3 py-2 bg-gray-400 text-sm font-medium"
+              >%</label
+            >
+            <input
+              type="text"
+              id="annualInterest"
+              placeholder="Annual Interest"
+              class="px-4 py-2 w-full h-full focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div
+            id="input-filed"
+            class="mt-4 border border-gray-500 text-gray-700 rounded-sm flex items-center"
+          >
+            <input
+              type="text"
+              id="repaymentYears"
+              placeholder="Repayment Years"
+              class="px-4 py-2 w-full h-full focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <!-- Calculate Button -->
+          <input
+            type="submit"
+            value="Calculate"
+            class="px-4 py-2 mt-4 bg-gray-800 hover:bg-gray-700 text-white rounded-md w-full focus:outline-none focus:shadow-outline"
+          />
+        </form>
+        <!-- Loader -->
+        <div id="loader" class="flex justify-center items-center hidden">
+          <img src="./img/loading.gif" alt="" />
+        </div>
+        <!-- Results Starts -->
+        <div id="results" class="mt-4 font-semibold hidden">
+          <h2 class="text-xl text-center">Results</h2>
+          <!-- Result 1 -->
+          <div
+            id="input-filed"
+            class="mt-4 border border-gray-500 text-gray-700 rounded-sm flex items-center bg-gray-400"
+          >
+            <label
+              for="monthlyPayment"
+              class="px-4 py-2 bg-gray-400 text-sm border-r border-gray-500 font-medium"
+              >Monthly Payment</label
+            >
+            <input
+              type="text"
+              id="monthlyPayment"
+              class="px-4 py-3 w-full h-full focus:outline-none bg-gray-400"
+              readonly
+            />
+          </div>
+          <!-- Result 2 -->
+          <div
+            id="input-filed"
+            class="mt-4 border border-gray-500 text-gray-700 rounded-sm flex items-center bg-gray-400"
+          >
+            <label
+              for="totalPaymen"
+              class="px-4 py-2 bg-gray-400 text-sm border-r border-gray-500 font-medium"
+              >Total Payment</label
+            >
+            <input
+              type="text"
+              id="totalPayment"
+              class="px-4 py-3 w-full h-full focus:outline-none bg-gray-400"
+              readonly
+            />
+          </div>
+          <!-- Result 3 -->
+          <div
+            id="input-filed"
+            class="mt-4 border border-gray-500 text-gray-700 rounded-sm flex items-center bg-gray-400"
+          >
+            <label
+              for="totalInterest"
+              class="px-4 py-2 bg-gray-400 text-sm border-r border-gray-500 font-medium"
+              >Total Interest</label
+            >
+            <input
+              type="text"
+              id="totalInterest"
+              class="px-4 py-3 w-full h-full focus:outline-none bg-gray-400"
+              readonly
+            />
+          </div>
+        </div>
+        <!-- Results Ends -->
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
