@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Number Guesser</title>
+  </head>
+  <body class="text-gray-800">
+    <div class="container">
+      <!-- Title -->
+      <h1 class="text-3xl sm:text-4xl font-semibold text-gray-800 mt-4 mb-4">
+        Number Guesser
+      </h1>
+
+      <!-- Game Menu -->
+      <div id="game" class="">
+        <p class="text-lg mb-2">
+          Guess a number between <span class="min-num"></span> and
+          <span class="max-num"></span>
+        </p>
+
+        <!-- input -->
+        <input
+          type="text"
+          id="guess-input"
+          placeholder="Enter your guess..."
+          class="mt-2 px-4 py-2 border border-gray-500 rounded-md"
+        />
+
+        <!-- submit button -->
+        <input
+          type="submit"
+          value="Submit"
+          id="guess-btn"
+          class="px-4 py-2 bg-transparent border border-gray-500 rounded-md"
+        />
+
+        <!-- Message -->
+        <p id="message"></p>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

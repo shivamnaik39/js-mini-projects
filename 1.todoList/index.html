@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./custom.css" />
     <title>Todo App</title>
   </head>
+
   <body class="">
     <section id="task-card" class="">
       <div class="container">
@@ -22,9 +23,11 @@
           <h2 class="text-2xl font-medium text-gray-700">
             Task List
           </h2>
+
           <form id="task-form">
             <div id="input-field" class="mt-6">
               <label for="task"></label>
+
               <input
                 type="text"
                 name="task"
@@ -33,14 +36,18 @@
                 class="w-3/4 focus:outline-none bg-gray-200 border-b-2 border-gray-600 p-2 text-gray-800 text-lg"
               />
             </div>
+
             <input
               type="submit"
               value="Add Task"
               class="w-40 mt-10 py-2 px-4 bg-teal-500 hover:bg-teal-400 focus:outline-none focus:shadow-outline text-center text-white text-base font-medium rounded-lg shadow-md"
             />
           </form>
+
           <!-- block ends -->
+
           <hr class="mt-12 mb-6 border-1 border-gray-500 w-full" />
+
           <!-- Filtering -->
           <h2 id="task-title" class="text-2xl font-medium text-gray-700">
             Tasks
@@ -48,6 +55,7 @@
 
           <div id="input-field" class="mt-6">
             <label for="filter"></label>
+
             <input
               type="text"
               name="filter"
@@ -62,7 +70,9 @@
             <!-- Li will come here -->
             <!-- Sample li -->
           </ul>
+
           <hr class="mt-6 mb-4 border-1 border-gray-500 w-full" />
+
           <a
             id="clear-tasks"
             href="#"
@@ -73,6 +83,7 @@
         </div>
       </div>
     </section>
+
     <script src="./app.js"></script>
   </body>
 </html>
