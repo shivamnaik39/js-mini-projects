@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Rock Paper Scissor</title>
+</head>
+
+<body class="bg-gray-800 text-gray-900">
+
+  <!-- Heading -->
+  <nav class=" ">
+    <div class="container">
+
+      <h1 class="text-2xl sm:text-3xl text-center mt-4 font-bold  text-white">
+        <span class="text-red-400">Rock</span>
+        <span class="text-green-400">Paper</span>
+        <span class="text-blue-400">Scissor</span>
+      </h1>
+
+    </div>
+  </nav>
+
+  <!-- Game Window -->
+  <div id="game-window" class="">
+
+
+    <!-- Player Section -->
+    <section id="player" class="max-w-sm mx-auto">
+
+      <div id="card"
+        class="px-0 py-4 m-4 mt-8 rounded-lg shadow-xl bg-gray-300 flex flex-col items-center justify-center">
+
+        <div id="player-choice"
+          class="bg-orange-300 shadow-md text-2xl border border-gray-600 font-semibold w-32 h-32 rounded-full text-center flex flex-col items-center justify-center">
+          Rock
+        </div>
+
+        <div id="options" class=" bg-gray-500 flex p-2 rounded-lg mt-4 shadow-lg">
+
+          <div id="rock"
+            class="h-12 w-12 bg-red-400 text-center flex flex-col items-center justify-center rounded-full mx-2 border border-gray-600 shadow-xl cursor-pointer">
+            R
+          </div>
+
+          <div id="paper"
+            class="h-12 w-12 bg-green-400 text-center flex flex-col items-center justify-center rounded-full mx-2 border border-gray-600 shadow-xl cursor-pointer">
+            P
+          </div>
+
+          <div id="scissor"
+            class="h-12 w-12 bg-blue-400 text-center flex flex-col items-center justify-center rounded-full mx-2 border border-gray-600 shadow-xl cursor-pointer">
+            S
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </section>
+    <!-- Player section ends -->
+
+    <!-- Score Sectiom -->
+    <section id="score" class="max-w-sm mx-auto">
+
+      <div class="bg-gray-300 px-0 py-4 m-4  rounded-lg shadow-xl text-center text-2xl font-bold">
+        <span id="player-score">0</span>
+        :
+        <span id="computer-score">0</span>
+      </div>
+
+    </section>
+    <!-- Score Section Ends -->
+
+    <!-- Computer Player Section -->
+    <section id="computer-player" class="max-w-sm mx-auto">
+
+      <div id="card" class="px-0 py-4 m-4 rounded-lg shadow-xl bg-gray-300 flex flex-col items-center justify-center">
+
+        <div id="computer-choice"
+          class="bg-orange-300 shadow-md text-2xl border border-gray-600 font-semibold w-32 h-32 rounded-full text-center flex flex-col items-center justify-center">
+          Rock
+        </div>
+
+
+
+      </div>
+
+
+    </section>
+    <!-- Computer Player section ends -->
+
+
+
+  </div>
+
+  <script src="./app.js" type="module"></script>
+</body>
+
+</html>
